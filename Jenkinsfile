@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Stage One') {
             steps {
-                echo 'Hello from Stage One!'
+                sh 'bash scripts/hello_stage1.sh'
             }
         }
 
         stage('Stage Two') {
             steps {
-                echo 'Hello from Stage Two!'
+                sh 'bash scripts/hello_stage2.sh'
             }
         }
     }
